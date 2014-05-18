@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+</head>
+
+<body>
+
+<h1>Demo#index</h1>
+<p>Hello from index!</p>
+    <a href="/demo/hello">Hello page 1</a><br />
+    <%= link_to('Hello page 2', {:action => 'hello'}) %><br />
+    <%= link_to('Hello page With Parameters', {:action => 'hello',:id => 20,:page => 5}) %><br />
+<hr />
+<% name = "Kevin" %>
+<% name = "sorry!'); alert('i hacked you!" %>
+<%= link_to('Roar', '#', :onclick => "jsRoar('#{j(name)}'); return true;") %><br />
+<%= javascript_tag("jsRoar('#{j(name)}');") %> 
+</body>
+</html>

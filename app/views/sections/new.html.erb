@@ -1,0 +1,14 @@
+<!--
+<h1>sections#new</h1>
+<p>Find me in app/views/sections/new.html.erb</p>
+-->
+<%= link_to("<< Back to list", {:action => 'index', :page_id => @page.id}, :class => 'back-link') %>
+<div class="Sections new">
+    <h2>Create sections</h2>
+    <%= form_for(:section, :url => {:action => 'create', :page_id => @page.id}) do |f| %>
+    <%= render(:partial => 'partials/form2', :locals => {:f => f}) %>
+    <div class="form-buttons">
+        <%= submit_tag("Create Section") %>
+    </div>
+    <% end %>
+</div>

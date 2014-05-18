@@ -1,0 +1,15 @@
+<% @page_title = "Admin Menue" %>
+
+<div class = "menue">
+    <h2>Admin Menue</h2>
+    <div class = "identity">Logged in as: <%= session[:username].upcase %></div>
+    <ul style="list-style-type: none">
+        <li><%= link_to("Manage Content", :controller => 'subjects') %></li><br />
+<!--
+        <li><%= link_to("Manage Pages", :controller => 'pages') %></li><br />
+        <li><%= link_to("Manage Sections", :controller => 'sections') %></li><br />
+-->
+        <li><%= link_to("Manage Admin Users", :controller => 'users') %></li><br />
+        <li><%= link_to("Logout", :action => 'logout') %></li>
+    </ul>
+</div>

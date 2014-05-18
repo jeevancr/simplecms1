@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+</head>
+
+<body>
+
+<h1>Demo#hello</h1>
+<p>Hello Shoie!</p>
+<%= 2+2 -%>
+    <br/><br/>
+
+<% @array.each do |n| -%>
+        <%= n+5 -%><br/>
+<% end -%>
+
+<br />
+
+    <a href="/demo/index">Go to index</a><br />
+    <%= link_to('Index Again', {:action => 'index'}) -%>
+<br />
+ID: <%= @ID -%>
+NEXT PAGE: <%= @page + 1 -%>
+        <hr />
+<%= params.inspect -%>
+        
+  
+</body>
+</html>
